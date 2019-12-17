@@ -1,0 +1,38 @@
+GET http://145.24.222.82:8000/recipes
+
+###
+
+GET http://localhost:8000/recipes/5df385c422237f5c6c2392c6
+
+###
+
+POST http://145.24.222.82:8000/recipes
+Content-Type: application/json
+
+{
+    "name": "Pasta bolognese",
+    "veganRecipe": "No, but is an option",
+    "ingredients": "Pasta, meat, sauce"
+}
+
+###
+
+DELETE http://localhost:8000/recipes/5df385c422237f5c6c2392c6
+
+###
+
+PUT http://145.24.222.82:8000/recipes/5df385c422237f5c6c2392c6
+Content-Type: application/json
+
+{
+    "name": "New Name"
+}
+
+###
+
+OPTIONS http://localhost:8000/recipes/5df385c422237f5c6c2392c6
+Content-Type: application/json
+
+{
+    "name": "New Name"
+}
